@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block title %} Актуальные вакансии {% endblock %}
+
+
+{% block content %}
+{% for obj in object_list %}
+    <div class="card mt-2 col-12">
+    <div class="card-body">
+    <h5 class="card-title">{{ obj.title }}</h5>
+    <p class="card-text">{{ obj.description }}</p>
+    <a href="{{ obj.url }}" class="card-link">Посмотреть подробнее</a>
+  </div>
+</div>
+
+{% empty %}
+    <p>Извините, в данный момент актуальных вакансий нет.</p>
+{% endfor %}
+<div class="row">
+    <div class="col-md-6 mx-auto mt-3">
+        <form method="GET" action="">
+            <div class="form-group">
+             {{ form.as_p }}
+            </div>
+            <button type="submit" class="btn btn-primary">Найти</button>
+        </form>
+    </div>
+</div>
+{% endblock %}
