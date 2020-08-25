@@ -1,0 +1,44 @@
+[
+{
+  "model": "scraping.city",
+  "pk": 1,
+  "fields": {
+    "name": "Донецк",
+    "slug": ""
+  }
+},
+{
+  "model": "scraping.language",
+  "pk": 1,
+  "fields": {
+    "name": "Питон",
+    "slug": "piton"
+  }
+},
+{
+  "model": "scraping.vacancy",
+  "pk": 1,
+  "fields": {
+    "url": "https://freekurses.com",
+    "title": "Утверждение на роль организатора",
+    "company": "Лох inc",
+    "description": "Описание бла блаб ла",
+    "city": 1,
+    "language": 1,
+    "timestemp": "2020-08-22"
+  }
+},
+{
+  "model": "scraping.vacancy",
+  "pk": 2,
+  "fields": {
+    "url": "https://www.instagram.com/p/BweAVePB5MJ/",
+    "title": "Химчистка обуви",
+    "company": "Лох inc",
+    "description": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "city": 1,
+    "language": 1,
+    "timestemp": "2020-08-22"
+  }
+}
+]
